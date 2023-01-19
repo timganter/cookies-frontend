@@ -2,14 +2,14 @@
 	let eatCookieResponse: any;
 
 	const eatCookie = async () => {
-		const response = await fetch('http://localhost:3333/eat-cookie');
+		const response = await fetch('http://localhost:3333/eat-cookie', { credentials: 'include' });
 		eatCookieResponse = await response.json();
 	};
 
 	let bakeCookieResponse: any;
 
 	const bakeCookie = async () => {
-		const response = await fetch('http://localhost:3333/bake-cookie');
+		const response = await fetch('http://localhost:3333/bake-cookie', { credentials: 'include' });
 		bakeCookieResponse = await response.json();
 	};
 
