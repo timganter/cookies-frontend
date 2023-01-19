@@ -1,6 +1,6 @@
 # What is this? 
 
-This is a frontend built on a bare bones SvelteKit install for testing reading and writing cookies to a backend. Originally developed for communicating and testing an AdonisJs backend for testing reading/writing cookies. Here is an AdonisJs repo to test with 👉 [https://github.com/timganter/cookies](https://github.com/timganter/cookies). 
+This is a frontend built on a bare bones [SvelteKit](https://kit.svelte.dev/) install for testing reading and writing cookies to a backend. Originally developed for communicating and testing an AdonisJs backend for testing reading/writing cookies. Here is an AdonisJs repo to test with 👉 [https://github.com/timganter/cookies](https://github.com/timganter/cookies). 
 
 # Installation
 
