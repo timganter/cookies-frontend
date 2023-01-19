@@ -1,38 +1,15 @@
-# create-svelte
+# What is this? 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a frontend built on a bare bones SvelteKit install for testing reading and writing cookies to a backend. Originally developed for communicating and testing an AdonisJs backend for testing reading/writing cookies. Here is an AdonisJs repo to test with 👉 [https://github.com/timganter/cookies](https://github.com/timganter/cookies). 
 
-## Creating a project
+# Installation
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. `npm install`
+1. `npm run dev`
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+# Details
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- You should see two buttons on the homepage. One for Baking (writing) a cookie and one for Eating (reading) a cookie.
+- Check out `routes/+page.ts` for implementation details. 
+- Clicking the Bake Cookie button will make a fetch call to http://localhost:3333/bake-cookie which should be a backend that writes a cookie.
+- Clicking the Eat Cookie button will make a fetch call to http://localhost:3333/eat-cookie which should be a backend that reads and returns the value of the cookie.
